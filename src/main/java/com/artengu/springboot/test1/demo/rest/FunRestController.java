@@ -14,5 +14,11 @@ public class FunRestController {
         return "Hello World! Time on server is " + LocalDateTime.now();
     }
 
+    @GetMapping("/workout")
+    public String workout(){
+        return "This is the workout!  /n Time on server is " + LocalDateTime.now();
+    }
+
+
 
 }
