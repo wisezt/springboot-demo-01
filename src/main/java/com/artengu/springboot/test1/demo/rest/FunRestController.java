@@ -11,13 +11,18 @@ public class FunRestController {
     // expose "/" that return "Hello World"
     @GetMapping("/")
     public String sayHello(){
-        return "Hello World! Time on server is " + LocalDateTime.now();
+        return "Hello World!001 Time on server is " + LocalDateTime.now();
     }
 
     @GetMapping("/workout")
     public String workout(){
-        return "This is the workout!  /n Time on server is " + LocalDateTime.now();
+        return "This is the workout! <br/> Time on server is " + LocalDateTime.now();
     }
+    @GetMapping("/workout01")
+    public String workout01(){
+        return "This is the workout! 01 <br/> Time on server is " + LocalDateTime.now();
+    }
+
 
 
 
